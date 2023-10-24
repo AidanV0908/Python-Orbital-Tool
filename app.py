@@ -7,14 +7,15 @@ import math as m
 import matplotlib.animation as anim
 
 # Constants
-G = 6.6743*10^-11
+G = 6.6743*pow(10, -11)
 
 # All units in SI
 r_lat_earth = 6357
-sF_earth = 6378.14 / 6357
+# sF_earth = 6378.14 / 6357
+sF_earth = 1.3
 r_moon = 1737.4
 d_moon = 384400
-m_Earth = 5.972*10^24
+m_Earth = 5.972*pow(10, 24)
 
 # Given radius on the lateral axis, stretch factor, and phi, find r
 def R_Oblate(r_lat, sF, phi):
